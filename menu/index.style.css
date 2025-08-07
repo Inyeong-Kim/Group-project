@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding-top: 56px;
+}
+.navbar{
+    font-weight: bolder;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.navbar button{
+    color: #7b2a3b;
+    border: 1px solid #7b2a3b;
+    background-color: #f2dcdc;
+}
+
+.navbar button:hover{
+    color: #f2dcdc;
+    border: 1px solid #f2dcdc;
+    background-color: #7b2a3b;
+}
+
+.menu-banner-title,
+.menu-banner-subtitle,
+.menu-tab {
+  display: none;
+}
+
+#menu-toggle1:checked ~ .menu-banner .menu-banner-title.menu-tab1,
+#menu-toggle1:checked ~ .menu-banner .menu-banner-subtitle.menu-tab1,
+#menu-toggle1:checked ~ .menu-contents .menu-tab1 {
+  display: block;
+}
+
+#menu-toggle2:checked ~ .menu-banner .menu-banner-title.menu-tab2,
+#menu-toggle2:checked ~ .menu-banner .menu-banner-subtitle.menu-tab2,
+#menu-toggle2:checked ~ .menu-contents .menu-tab2 {
+  display: block;
+}
+
+#menu-toggle3:checked ~ .menu-banner .menu-banner-title.menu-tab3,
+#menu-toggle3:checked ~ .menu-banner .menu-banner-subtitle.menu-tab3,
+#menu-toggle3:checked ~ .menu-contents .menu-tab3 {
+  display: block;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+.first-line {
+  border-bottom: 1px solid rgb(92, 92, 92);
+  padding: 0 1vw;
+}
+
+.second-line {
+  border-bottom: 1px solid rgb(92, 92, 92);
+  padding: 0 1vw;
+}
+
+.second-line a {
+  color: white;
+  text-decoration: none;
+}
+
+.third-line {
+  display: none;
+}
+
+@media screen and (max-width: 48rem) {
+  .first-line {
+    text-align: center;
+  }
+
+  .second-line {
+    padding: 0 2rem;
+    border-bottom: 1px solid rgb(92, 92, 92);
+    display: flex;
+  }
+
+  .third-line {
+    display: block;
+  }
+}

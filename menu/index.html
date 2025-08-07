@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary pe-3 ps-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">K-Culture Coffee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">공간</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">히스토리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">가맹점 문의</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="menu-wrapper">
+     <div style="background-color: aqua; height: 1000px;" class="w-100">
+
+      <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle1" autocomplete="off" checked>
+      <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle2" autocomplete="off">
+      <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle3" autocomplete="off">
+
+      <div class="menu-banner text-center d-flex flex-column justify-content-center align-items-center"style="height: 300px; background-color: gray; margin: 0; padding: 0;">
+        <h3 class="menu-banner-title menu-tab1">음료</h3>
+        <h3 class="menu-banner-title menu-tab2">푸드</h3>
+        <h3 class="menu-banner-title menu-tab3">MD</h3>
+
+        <h5 class="menu-banner-subtitle menu-tab1">당신의 취향에 맞춘 한 잔, K-culture와 함께 즐겨보세요</h5>
+        <h5 class="menu-banner-subtitle menu-tab2">일상을 감싸는 K-무드 푸드를 만나보세요</h5>
+        <h5 class="menu-banner-subtitle menu-tab3">K-Culture 감성의 특별한 MD를 소개합니다</h5>
+
+        <div class="btn-group mt-4" role="group">
+          <label class="btn btn-outline-light" style="width: 200px;" for="menu-toggle1">음료</label>
+          <label class="btn btn-outline-light" style="width: 200px;" for="menu-toggle2">상품</label>
+          <label class="btn btn-outline-light" style="width: 200px;" for="menu-toggle3">MD</label>
+        </div>
+      </div>
+      <div class="menu-contents pt-5 text-center">
+        <div class="menu-tab menu-tab1">🥤 여기는 음료 메뉴입니다. 커피, 에이드, 차 등을 만나보세요!</div>
+        <div class="menu-tab menu-tab2">🎁 여기는 푸드 영역입니다. 다양한 상품을 확인해보세요!</div>
+        <div class="menu-tab menu-tab3">👕 여기는 MD 전용 페이지입니다. K-Culture 굿즈를 소개합니다!</div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+     <footer>
+        <container>
+            <div class="pb-4 pt-4 first-line">K-Coffee</div>
+            <div class="second-line">
+                <row>
+                    <col>
+                    <a href="https://www.naver.com/">United States</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Email Sign-up</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Contact Us</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Follow Us</a>
+                    </col>
+                    <col>
+                    <a href="https://www.naver.com/">Callifonia Transparency</a>
+                    </col>
+                    <Col>
+                    <a href="https://www.naver.com/">Legal Notice</a>
+                    </Col>
+                    <Col>
+                    <a href="https://www.naver.com/">Careers</a>
+                    </Col>
+                    <col>
+                    <a href="https://www.naver.com/">Sitemap</a>
+                    </col>
+                </row>
+            </div>
+            <div class="text-center p-2 third-line">Ship to : Korea</div>
+        </container>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+</html>
