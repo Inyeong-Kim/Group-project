@@ -1,62 +1,93 @@
-body{
-    margin: 0;
-    padding-top: 56px;
+.sub-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-.navbar{
-    font-weight: bolder;
-    position: fixed;
-    width: 100%;
-    top: 0;
+ul.sub-title-left-side li {
+  vertical-align: middle;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  margin: 0 2.5px;
 }
-.navbar button{
-    color: #7b2a3b;
-    border: 1px solid #7b2a3b;
-    background-color: #f2dcdc;
+.sub-title-left-side {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  gap: 8px;
 }
-
-.navbar button:hover{
-    color: #f2dcdc;
-    border: 1px solid #f2dcdc;
-    background-color: #7b2a3b;
+.img-arrow {
+  position: relative;
+  top: 2px;
 }
-
-
-footer {
-  background-color: black;
-  color: white;
+.style-none {
+  list-style: none;
 }
-.first-line {
-  border-bottom: 1px solid rgb(92, 92, 92);
-  padding: 0 1vw;
-}
-
-.second-line {
-  border-bottom: 1px solid rgb(92, 92, 92);
-  padding: 0 1vw;
-}
-
-.second-line a {
-  color: white;
+.event {
+  font-size: 12px;
+  color: #222222;
   text-decoration: none;
 }
-
+.event-banner {
+  background-image: url("./image/k-pop demonhuters.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.event-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.event-section {
+  padding: 3rem 1rem;
+}
+.event-step {
+  margin-bottom: 2rem;
+}
+.event-btn {
+  margin-top: 2rem;
+}
+.btn-outline-success {
+  background-color: #7b2a3b;
+  border: 1px solid #f2dcdc;
+  color: #f2dcdc;
+  font-weight: bolder;
+}
+.btn-outline-success:hover {
+  background-color: #f2dcdc;
+  border: 1px solid #7b2a3b;
+  color: #7b2a3b;
+}
+.first-line {
+  border-bottom: 1px solid #392d23;
+}
+.second-line a {
+  text-decoration: none;
+  color: white;
+}
 .third-line {
   display: none;
 }
-
-
 @media screen and (max-width: 48rem) {
   .first-line {
     text-align: center;
   }
-
   .second-line {
     padding: 0 2rem;
-    border-bottom: 1px solid rgb(92, 92, 92);
-    display: flex;
+    border-bottom: 1px solid #392d23;
   }
-
   .third-line {
     display: block;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .flag {
+    display: none;
   }
 }
