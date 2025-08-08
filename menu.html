@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.style.css">
-    <link rel="stylesheet" href="nav-footer.style.css">
+    <link rel="stylesheet" href="./nav-footer.style.css">
+    <link rel="stylesheet" href="./menu.style.css">
 </head>
 
 <body>
-    <!-- ---------------------네비 영역--------------------- -->
-    <nav class="navbar navbar-expand-lg p-0">
+  <nav class="navbar navbar-expand-lg p-0">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html"><img src="./index-img/logo.jpg" alt="#"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -48,42 +46,39 @@
         </div>
     </nav>
 
-    <!-- ---------------------메인 영역--------------------- -->
-    <div>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active home-carousel-img-box1">
-                    <img src="./index-img/c-img1.jpg" class="d-block home-carousel-img" alt="...">
-                </div>
-                <div class="carousel-item home-carousel-img-box2">
-                    <img src="./index-img/c-img2.jpg" class="d-block home-carousel-img" alt="...">
-                </div>
-                <div class="carousel-item home-carousel-img-box3">
-                    <img src="./index-img/c-img3.jpg" class="d-block home-carousel-img" alt="...">
-                </div>
-            </div>
-            
-            <button class="carousel-control-prev home-carousel-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon home-carousel-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next home-carousel-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon home-carousel-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+  <main>
+    <div class="menu-wrapper">
+     <div style="background-color: aqua; height: 1000px;" class="w-100">
+
+      <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle1" autocomplete="off" checked>
+      <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle2" autocomplete="off">
+      <input type="radio" class="btn-check" name="menu-toggle" id="menu-toggle3" autocomplete="off">
+
+      <div class="menu-banner text-center d-flex flex-column justify-content-center align-items-center"style="height: 300px; background-color: gray; margin: 0; padding: 0;">
+        <h3 class="menu-banner-title menu-tab1">음료</h3>
+        <h3 class="menu-banner-title menu-tab2">푸드</h3>
+        <h3 class="menu-banner-title menu-tab3">MD</h3>
+
+        <h5 class="menu-banner-subtitle menu-tab1">당신의 취향에 맞춘 한 잔, K-culture와 함께 즐겨보세요</h5>
+        <h5 class="menu-banner-subtitle menu-tab2">일상을 감싸는 K-무드 푸드를 만나보세요</h5>
+        <h5 class="menu-banner-subtitle menu-tab3">K-Culture 감성의 특별한 MD를 소개합니다</h5>
+
+        <div class="btn-group mt-4" role="group">
+          <label class="btn btn-outline-light" style="width: 200px;" for="menu-toggle1">음료</label>
+          <label class="btn btn-outline-light" style="width: 200px;" for="menu-toggle2">상품</label>
+          <label class="btn btn-outline-light" style="width: 200px;" for="menu-toggle3">MD</label>
         </div>
+      </div>
+      <div class="menu-contents pt-5 text-center">
+        <div class="menu-tab menu-tab1"> 여기는 음료 메뉴입니다. 커피, 에이드, 차 등을 만나보세요!</div>
+        <div class="menu-tab menu-tab2"> 여기는 푸드 영역입니다. 다양한 푸드를 확인해보세요!</div>
+        <div class="menu-tab menu-tab3"> 여기는 MD 전용 페이지입니다. K-Culture 굿즈를 소개합니다! </div>
+      </div>
     </div>
+    </div>
+  </main>
 
-
-    <section style="height: 100px; background-color: aqua;">대표 메뉴</section>
-    <section style="height: 100px; background-color: aqua;">대표 공간</section>
-    <section style="height: 100px; background-color: aqua;">이벤트</section>
-    <section style="height: 100px; background-color: aqua;">공지사항</section>
-
-
-<!-- ---------------------푸터 영역--------------------- -->
-
-    <footer>
+     <footer>
         <container>
             <div class="pb-4 pt-4 first-line">K-Coffee</div>
             <div class="second-line">
@@ -125,13 +120,9 @@
 
 
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
-
-
 
 </html>
