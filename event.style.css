@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 ul.sub-title-left-side li {
   vertical-align: middle;
@@ -53,39 +53,7 @@ ul.sub-title-left-side li {
 .event-btn {
   margin-top: 2rem;
 }
-.btn-outline-success {
-  background-color: #7b2a3b;
-  border: 1px solid #f2dcdc;
-  color: #f2dcdc;
-  font-weight: bolder;
-}
-.btn-outline-success:hover {
-  background-color: #f2dcdc;
-  border: 1px solid #7b2a3b;
-  color: #7b2a3b;
-}
-.first-line {
-  border-bottom: 1px solid #392d23;
-}
-.second-line a {
-  text-decoration: none;
-  color: white;
-}
-.third-line {
-  display: none;
-}
-@media screen and (max-width: 48rem) {
-  .first-line {
-    text-align: center;
-  }
-  .second-line {
-    padding: 0 2rem;
-    border-bottom: 1px solid #392d23;
-  }
-  .third-line {
-    display: block;
-  }
-}
+
 @media screen and (max-width: 48rem) {
   .flag {
     display: none;
