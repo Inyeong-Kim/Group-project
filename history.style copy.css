@@ -1,0 +1,141 @@
+
+/* history main */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.history-content-1{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.cafe-img-line{
+  align-content: center;
+}
+.cafe-img{
+    vertical-align: top;
+    max-width: 100%;
+}
+.cafe-title{
+  color: #7b2a3b;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*
+.cafe-img-1{
+    position: relative;
+    background-image: url(./images/cafe.png);
+    height: 100vh;
+    background-size: cover;
+}
+*/
+.img-cover{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+   z-index:1;
+}
+/*
+.img-content{
+  position: absolute;
+  top:80%;
+  left:20%;
+  transform: translate(-50%, -50%);
+  font-size:5rem;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}*/
+
+.history-ourStory-h2{
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.history-ourCoffee-h2{
+  padding-bottom: 1.5rem;
+}
+
+.cafe-content{
+  display: flex;             
+  flex-direction: column;
+  align-items: flex-start;          
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 2rem; 
+}
+
+.cafe-content h4,
+.cafe-content h5,
+.cafe-content p{
+  margin-top: 0;  
+}
+
+.cafe-img-2{
+  position: relative;
+  background-image: url(./images/coffee.png);
+  height: 100vh;
+  background-size: cover;
+}
+
+.cafe-img-3{
+  position: relative;
+  background-image: url(./images/beans.png);
+  height: 100vh;
+  background-size: cover;
+}
+
+
+.history-ourCoffee{
+  background-color: #F6F6F4;
+}
+
+
+
+
+
+/* 위로가기 */
+
+.history-top-btn{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.top-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.top-btn-a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.top-btn-a:hover{
+    color: #7b2a3b;
+}
+
+
+
+
+/* history 미디어쿼리 */
+
+@media screen and (max-width: 62rem){
+
+  .history-content-1{
+    flex-direction: column;
+  }
+  .cafe-content{
+    align-items: center;  
+    justify-content: center;
+    align-content: center;
+    text-align: center
+  }
+
+
+}
