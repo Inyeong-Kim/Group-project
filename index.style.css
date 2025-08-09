@@ -146,13 +146,12 @@ a {
   width: 60%;
   max-height: 400px;
   z-index: 2;
-  aspect-ratio: 14/10;
-  object-fit: cover;
+  aspect-ratio: 14/12;
   height: auto;
 }
 .home-promo-img:not(.center) {
   opacity: 0.5;
-  aspect-ratio: 16/6;
+  aspect-ratio: 14/12;
   object-fit: cover;
   height: auto;
 }
@@ -241,10 +240,11 @@ a {
   .home-promo-img {
     display: none;
     width: 0%;
+    aspect-ratio: 14 / 10;
   }
   .home-promo-img-center {
     width: 80%;
-    max-height: 250px;
+    aspect-ratio: 14 / 10;
     margin: 0 auto;
   }
   .home-carousel-prev2,
@@ -259,7 +259,6 @@ a {
     background-size: 1rem 1rem;
     transform: scale(0.9);
   }
-
 
   .home-carousel-prev,
   .home-carousel-next {
@@ -279,7 +278,7 @@ a {
 @media screen and (max-width: 578.98px) {
   .home-promo-img-center {
     width: 80%;
-    aspect-ratio: 12 / 6;
+    aspect-ratio: 14 / 10;
     margin: 0 auto;
   }
   .home-carousel-prev,
@@ -302,7 +301,7 @@ a {
     transform: scale(0.5);
   }
   .text-center-h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bolder;
     margin-top: 0.8rem;
   }
@@ -310,5 +309,21 @@ a {
     font-size: 0.7rem;
     font-weight: bold;
     margin-top: 0.3rem;
+  }
+  .home-notice-item {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+    padding: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
   }
 }
