@@ -1,0 +1,23 @@
+.menu-banner-title,
+.menu-banner-subtitle,
+.menu-tab {
+  display: none;
+}
+
+#menu-toggle1:checked ~ .menu-banner .menu-banner-title.menu-tab1,
+#menu-toggle1:checked ~ .menu-banner .menu-banner-subtitle.menu-tab1,
+#menu-toggle1:checked ~ .menu-contents .menu-tab1 {
+  display: block;
+}
+
+#menu-toggle2:checked ~ .menu-banner .menu-banner-title.menu-tab2,
+#menu-toggle2:checked ~ .menu-banner .menu-banner-subtitle.menu-tab2,
+#menu-toggle2:checked ~ .menu-contents .menu-tab2 {
+  display: block;
+}
+
+#menu-toggle3:checked ~ .menu-banner .menu-banner-title.menu-tab3,
+#menu-toggle3:checked ~ .menu-banner .menu-banner-subtitle.menu-tab3,
+#menu-toggle3:checked ~ .menu-contents .menu-tab3 {
+  display: block;
+}

@@ -36,6 +36,13 @@ body {
   padding: 0;
 }
 
+
+
+
+
+
+
+
 footer {
   background-color: black;
   color: white;
@@ -72,5 +79,13 @@ footer {
 
   .third-line {
     display: block;
+  }
+}
+
+
+@media screen and (max-width: 991.9px) {
+  .nav-item a:hover {
+    font-weight: 900;
+    transform: scale(1);
   }
 }
