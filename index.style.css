@@ -238,25 +238,25 @@ a {
   z-index: 0;
   opacity: 0.8;
 }
-.home-history-img-box{
+.home-history-img-box {
   height: 45vh;
   width: 40vw;
   position: relative;
 }
-.home-history-img2{
+.home-history-img2 {
   position: absolute;
   max-width: 50%;
   max-height: 100%;
   z-index: 1;
   left: 0;
-  top: 5vh;
+  top: 5.5vh;
 }
-.home-history-img1{
+.home-history-img1 {
   position: absolute;
   max-width: 70%;
   max-height: 100%;
   right: 0;
-  top: 10vh;
+  top: 10.5vh;
   z-index: 0;
 }
 
@@ -286,6 +286,21 @@ a {
 .home-history-subtitle-text {
   font-size: 1.2vw;
 }
+
+.home-history-inner,
+.home-history-img-box {
+  opacity: 0;
+  transform: translateY(50px); /* 아래에서 올라오게 */
+  transition: all 0.8s ease-out;
+}
+
+/* 등장할 때 상태 */
+.home-history-section.show .home-history-inner,
+.home-history-section.show .home-history-img-box {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 @media screen and (max-width: 991.98px) {
   .nav-item a:hover {
@@ -354,6 +369,26 @@ a {
 }
 
 @media screen and (max-width: 767.98px) {
+  .home-history-section {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .home-history-img-box {
+    height: 45vh;
+    width: clamp(350px, 40vh, 500px);
+    margin-bottom: -12vh;
+  }
+  .home-history-img2 {
+    max-width: 50%;
+    max-height: 100%;
+    z-index: 1;
+  }
+  .home-history-img1 {
+    max-width: 70%;
+    max-height: 100%;
+    z-index: 0;
+  }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -412,7 +447,7 @@ a {
     padding: 60px 20px;
     text-align: center;
     font-family: "Noto Sans KR", sans-serif;
-    height: clamp(300px 50vh 600px); /* 원하는 높이 범위 */
+    height: clamp(300px 30vh 400px); /* 원하는 높이 범위 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -432,5 +467,10 @@ a {
   }
   .home-history-subtitle-text {
     font-size: 0.4rem;
+  }
+  .home-history-img-box {
+    height: 45vh;
+    width: clamp(200px, 35vh, 500px);
+    margin-bottom: -12vh;
   }
 }

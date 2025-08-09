@@ -173,7 +173,7 @@
             <img class="home-history-img1" src="./index-img/공간.png" alt="#">
             <img class="home-history-img2" src="./index-img/공간2.png" alt="#">
         </div>
-        
+
     </section>
 
 
@@ -236,6 +236,29 @@
             index = (index + 1) % items.length;
             items[index].classList.add('active');
         }, 3000);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const section = document.querySelector(".home-history-section");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            section.classList.add("show");
+                        } else {
+                            section.classList.remove("show");
+                        }
+                    });
+                },
+                {
+                    threshold: 0.6, // 30% 보이면 발동
+                }
+            );
+
+            observer.observe(section);
+        });
+
+
     </script>
 </body>
 
