@@ -77,6 +77,12 @@ ul.kyuyoung-sub-title-left-side li {
   background-color: #333;
 }
 
+@media (max-width: 576px) {
+  .kyuyoung-search-box {
+    margin: 0 auto;
+  }
+}
+
 table.kyuyoung-table {
   width: 100%;
   border-collapse: collapse;
@@ -125,6 +131,7 @@ tr.kyuyoung-tr:hover {
   .kyuyoung-table td:nth-child(4) {
     display: none;
   }
+
   .kyuyoung-search-box {
     margin: 0 auto;
   }
@@ -136,3 +143,4 @@ tr.kyuyoung-tr:hover {
     font-size: 3.2vw;
   }
 }
+
