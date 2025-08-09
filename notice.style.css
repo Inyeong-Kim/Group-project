@@ -43,10 +43,11 @@ ul.kyuyoung-sub-title-left-side li {
   margin: 1.25rem 0;
 }
 .kyuyoung-search-box {
+  display: flex;
+  flex-wrap: nowrap; /* 줄바꿈 방지 */
   max-width: 25rem;
   width: 100%;
   margin-left: auto;
-  display: flex;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 0.1875rem;
@@ -54,7 +55,8 @@ ul.kyuyoung-sub-title-left-side li {
 }
 .kyuyoung-search-input {
   border: none;
-  flex: 1;
+  flex: 1 1 auto; /* 가변 너비 */
+  min-width: 0; /* 너무 커지는 것 방지 */
   padding: 0.625rem 0.75rem;
   font-size: 0.875rem;
 }
@@ -65,17 +67,16 @@ ul.kyuyoung-sub-title-left-side li {
   background-color: #555;
   color: white;
   border: none;
-  padding: 0 1.25rem;
+  padding: 0 1rem; /* 버튼 크기 조절 */
   font-size: 0.875rem;
+  white-space: nowrap; /* 줄바꿈 방지 */
+  flex-shrink: 0; /* 줄어들지 않게 */
+  cursor: pointer;
 }
 .kyuyoung-search-btn:hover {
   background-color: #333;
 }
-@media (max-width: 576px) {
-  .kyuyoung-search-box {
-    margin: 0 auto;
-  }
-}
+
 table.kyuyoung-table {
   width: 100%;
   border-collapse: collapse;
@@ -123,5 +124,15 @@ tr.kyuyoung-tr:hover {
   .kyuyoung-table th:nth-child(4),
   .kyuyoung-table td:nth-child(4) {
     display: none;
+  }
+  .kyuyoung-search-box {
+    margin: 0 auto;
+  }
+  .kyuyoung-th,
+  .kyuyoung-td {
+    font-size: 3vw;
+  }
+  .kyuyoung-wn{
+    font-size: 3.2vw;
   }
 }
