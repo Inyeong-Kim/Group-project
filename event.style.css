@@ -19,7 +19,7 @@ ul.sub-title-left-side li {
 }
 .img-arrow {
   position: relative;
-  top: 2px;
+  top: 0.15em;
 }
 .style-none {
   list-style: none;
