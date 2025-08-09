@@ -41,15 +41,19 @@ ul.sub-title-left-side li {
 }
 .event-info {
   font-size: 18px;
+  padding: 0 1vw;
 }
 .event-title {
   font-weight: bold;
-  font-size: 20px;
-  margin-right: 10px;
+  font-size: 3vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 .event-date {
   color: #777;
-  font-size: 14px;
+  font-size: 1.5vw;
+  margin: 0;
 }
 .event-social {
   margin-left: 20px;
@@ -64,4 +68,17 @@ ul.sub-title-left-side li {
   height: auto;
   margin: 0 auto;
   border-radius: 10px;
+}
+
+@media screen and (max-width:575.98px) {
+  .event-title {
+  font-weight: bold;
+  font-size: 3.4vw;
+  display: flex;
+  justify-content: center;
+}
+.event-date {
+  color: #777;
+  font-size: 2.5vw;
+}
 }
