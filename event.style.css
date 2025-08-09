@@ -29,33 +29,39 @@ ul.sub-title-left-side li {
   color: #222222;
   text-decoration: none;
 }
-.event-banner {
-  background-image: url("./image/k-pop demonhuters.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  color: white;
+.event-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  background-color: #f9f9f9;
 }
-.event-banner h1 {
-  font-size: 3rem;
+.event-info {
+  font-size: 18px;
+}
+.event-title {
   font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
 }
-.event-section {
-  padding: 3rem 1rem;
+.event-date {
+  color: #777;
+  font-size: 14px;
 }
-.event-step {
-  margin-bottom: 2rem;
+.event-social {
+  margin-left: 20px;
 }
-.event-btn {
-  margin-top: 2rem;
+.event-social img {
+  width: 30px;
+  height: 30px;
 }
-
-@media screen and (max-width: 48rem) {
-  .flag {
-    display: none;
-  }
+.event-joined-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
 }
