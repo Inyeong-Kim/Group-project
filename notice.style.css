@@ -76,15 +76,10 @@ ul.kyuyoung-sub-title-left-side li {
 .kyuyoung-search-btn:hover {
   background-color: #333;
 }
+
 @media (max-width: 576px) {
   .kyuyoung-search-box {
     margin: 0 auto;
-  }
-}
-@media (max-width: 320px) {
-  .kyuyoung-search-btn {
-    padding: 0 0.75rem;
-    font-size: 0.8rem;
   }
 }
 
@@ -136,4 +131,16 @@ tr.kyuyoung-tr:hover {
   .kyuyoung-table td:nth-child(4) {
     display: none;
   }
+
+  .kyuyoung-search-box {
+    margin: 0 auto;
+  }
+  .kyuyoung-th,
+  .kyuyoung-td {
+    font-size: 3vw;
+  }
+  .kyuyoung-wn{
+    font-size: 3.2vw;
+  }
 }
+
