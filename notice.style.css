@@ -1,0 +1,114 @@
+.kyuyoung-sub-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+ul.kyuyoung-sub-title-left-side li {
+  vertical-align: middle;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  margin: 0 2.5px;
+}
+.kyuyoung-sub-title-left-side {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  gap: 8px;
+  list-style: none;
+}
+.kyuyoung-img-arrow {
+  position: relative;
+  top: 2px;
+}
+.kyuyoung-style-none {
+  list-style: none;
+}
+.kyuyoung-wn {
+  font-size: 12px;
+  color: #666666;
+  text-decoration: none;
+}
+.kyuyoung-notice {
+  font-size: 12px;
+  color: #222222;
+  text-decoration: none;
+}
+.kyuyoung-search-area {
+  background-color: #f6f6f4;
+  padding: 30px;
+  margin: 20px 0;
+}
+.kyuyoung-search-box {
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.kyuyoung-search-input {
+  border: none;
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+.kyuyoung-search-input:focus {
+  outline: none;
+}
+.kyuyoung-search-btn {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.kyuyoung-search-btn:hover {
+  background-color: #333;
+}
+@media (max-width: 576px) {
+  .kyuyoung-search-box {
+    margin: 0 auto;
+  }
+}
+table.kyuyoung-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+caption.kyuyoung-caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+th.kyuyoung-th,
+td.kyuyoung-td {
+  border-bottom: 1px solid #ccc;
+  padding: 12px 8px;
+  text-align: center;
+}
+th.kyuyoung-th {
+  background-color: #f8f8f8;
+}
+td.kyuyoung-td-title {
+  text-align: left;
+}
+tr.kyuyoung-tr:hover {
+  background-color: #f4f4f4;
+}
+.kyuyoung-search-box input[type="text"] {
+  width: 250px;
+  padding: 6px;
+  font-size: 1em;
+}
+.kyuyoung-search-box button {
+  padding: 6px 12px;
+  font-size: 1em;
+  cursor: pointer;
+}
