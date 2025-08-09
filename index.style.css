@@ -291,7 +291,7 @@ a {
 .home-history-img-box {
   opacity: 0;
   transform: translateY(50px); /* 아래에서 올라오게 */
-  transition: all 0.8s ease-out;
+  transition: all 1s ease-out;
 }
 
 /* 등장할 때 상태 */
@@ -457,11 +457,6 @@ a {
     font-size: 1.5em;
     margin-bottom: 1.5vh;
   }
-
-  .home-history-section .highlight {
-    color: #c27a56;
-  }
-
   .home-history-subtitle {
     font-size: 0.8rem;
   }
@@ -473,4 +468,9 @@ a {
     width: clamp(200px, 35vh, 500px);
     margin-bottom: -12vh;
   }
+  .highlight {
+  color: #74442c;
+  font-size: 10vw;
+  -webkit-text-stroke: 0.5px white;
+}
 }
