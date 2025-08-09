@@ -105,7 +105,6 @@ a {
 .home-notice-wrapper {
   position: relative;
   height: auto;
-  overflow: hidden;
 }
 
 .home-notice-item {
@@ -113,13 +112,13 @@ a {
   color: white;
   font-weight: bolder;
   position: absolute;
-  font-size: 1rem;
+  font-size: 0.9rem;
   top: 0;
   left: 0;
   width: 100%;
   opacity: 0;
   transition: opacity 1.2s ease;
-  padding: 10px;
+  padding: 10px 0;
   font-weight: bold;
   background-color: black;
   color: white;
@@ -136,22 +135,32 @@ a {
   justify-content: center;
   overflow: hidden;
 }
-.home-promo-img {
-  width: 20%;
-  max-height: 400px;
+.home-promo-img-l {
+  object-position: right;
+}
+.home-promo-img-r {
+  object-position: left;
+}
+.home-promo-img-l,
+.home-promo-img-r {
+  max-height: 500px;
   flex-shrink: 0;
-  margin: 0 20px;
+  width: 20%;
 }
 .home-promo-img-center {
   width: 60%;
-  max-height: 400px;
+  max-height: 450px;
   z-index: 2;
-  aspect-ratio: 14/12;
+  height: auto;
+  margin: 0 10px;
+}
+.home-promo-img-l:not(.center) {
+  opacity: 0.5;
+  object-fit: cover;
   height: auto;
 }
-.home-promo-img:not(.center) {
+.home-promo-img-r:not(.center) {
   opacity: 0.5;
-  aspect-ratio: 14/12;
   object-fit: cover;
   height: auto;
 }
@@ -210,6 +219,74 @@ a {
   margin-top: 0.8rem;
 }
 
+.home-history-section {
+  font-family: "Noto Sans KR", sans-serif;
+  height: 65vh; /* 원하는 높이 범위 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home-history-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(./images/beans.png);
+  z-index: 0;
+  opacity: 0.8;
+}
+.home-history-img-box{
+  height: 45vh;
+  width: 40vw;
+  position: relative;
+}
+.home-history-img2{
+  position: absolute;
+  max-width: 50%;
+  max-height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 5vh;
+}
+.home-history-img1{
+  position: absolute;
+  max-width: 70%;
+  max-height: 100%;
+  right: 0;
+  top: 10vh;
+  z-index: 0;
+}
+
+.home-history-inner {
+  color: white;
+  z-index: 1;
+  font-weight: bold;
+  padding: 2vw;
+}
+
+.home-history-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3vh;
+}
+
+.highlight {
+  color: #74442c;
+  font-size: 4vw;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.home-history-subtitle {
+  font-size: 1.8vw;
+  color: white;
+  margin-bottom: 0.5vh;
+}
+.home-history-subtitle-text {
+  font-size: 1.2vw;
+}
+
 @media screen and (max-width: 991.98px) {
   .nav-item a:hover {
     font-weight: 900;
@@ -237,7 +314,8 @@ a {
   .home-promo-img-box {
     display: block;
   }
-  .home-promo-img {
+  .home-promo-img-l,
+  .home-promo-img-r {
     display: none;
     width: 0%;
     aspect-ratio: 14 / 10;
@@ -275,7 +353,10 @@ a {
   }
 }
 
-@media screen and (max-width: 578.98px) {
+@media screen and (max-width: 767.98px) {
+}
+
+@media screen and (max-width: 575.98px) {
   .home-promo-img-center {
     width: 80%;
     aspect-ratio: 14 / 10;
@@ -325,5 +406,31 @@ a {
     font-weight: bold;
     background-color: black;
     color: white;
+  }
+  .home-history-section {
+    background-color: #fffaf5;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    height: clamp(300px 50vh 600px); /* 원하는 높이 범위 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-history-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.5vh;
+  }
+
+  .home-history-section .highlight {
+    color: #c27a56;
+  }
+
+  .home-history-subtitle {
+    font-size: 0.8rem;
+  }
+  .home-history-subtitle-text {
+    font-size: 0.4rem;
   }
 }

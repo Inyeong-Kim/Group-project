@@ -14,8 +14,8 @@
 
 <body>
     <!-- ---------------------네비 영역--------------------- -->
-    <nav class="navbar navbar-expand-lg p-0">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg home-nav-container-fluid">
+        <div class="container-fluid home-nav-container-fluid">
             <a class="navbar-brand" href="./index.html"><img src="./index-img/logo.jpg" alt="#" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -40,7 +40,7 @@
                         <a class="nav-link" href="./notice.html">공지사항</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex home-nav-btn" role="search">
                     <input class="form-control me-2" type="search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -78,23 +78,24 @@
 
 
     <section style="height: 100px; background-color: aqua;">대표 메뉴</section>
-    <section style="height: 100px; background-color: aqua;">대표 공간</section>
+    <section style="height: 100px; background-color: aqua;">원두 설명?</section>
     <section>
-        <div class="row">
-            <div class="col-12 col-lg-6 bg-black text-white p-3 home-notice">
+        <div class="row m-0 p-0">
+            <div class="col-12 col-lg-6 bg-black text-white py-3 home-notice">
 
                 <div class="home-notice-wrapper"><a href="./notice.html">
-                    <div class="home-notice-item active">[이벤트] 여름 시즌 음료 할인 행사 안내</div>
-                    <div class="home-notice-item">[공지] 고객 상담 시간 변경 안내</div>
-                    <div class="home-notice-item">[안내] 매장 내 위생 지침 강화</div>
-                    <div class="home-notice-item">[이벤트] 포인트 적립 2배 혜택 안내</div>
-                    <div class="home-notice-item">[공지] 신메뉴 출시 및 가격 변경 안내</div></a>
+                        <div class="home-notice-item active">[이벤트] 여름 시즌 음료 할인 행사 안내</div>
+                        <div class="home-notice-item">[공지] 고객 상담 시간 변경 안내</div>
+                        <div class="home-notice-item">[안내] 매장 내 위생 지침 강화</div>
+                        <div class="home-notice-item">[이벤트] 포인트 적립 2배 혜택 안내</div>
+                        <div class="home-notice-item">[공지] 신메뉴 출시 및 가격 변경 안내</div>
+                    </a>
                 </div>
 
             </div>
 
 
-            <div class="container-fluid py-3 col-12 col-lg-6">
+            <div class="container-fluid py-3 col-12 col-lg-6 p-0 m-0">
                 <div class="d-flex justify-content-center align-items-center">
                     <h5 class="mb-0 fw-bolder">K-Culture Coffee 이벤트</h5>
                     <button class="btn home-event-btn ms-2" type="button" data-bs-toggle="collapse"
@@ -105,39 +106,42 @@
             </div>
         </div>
         <div class="collapse" id="promoCollapse">
-            <div class="container-fluid bg-white py-2">
+            <div class="container-fluid bg-white py-2 px-0">
                 <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="home-promo-img-box">
-                                <img src="./index-img/광복.jpg" class="home-promo-img d-block" alt="이벤트 1">
+                                <img src="./index-img/광복.jpg" class="home-promo-img-l d-block" alt="이벤트 1">
                                 <img src="./index-img/후기.jpg" class="home-promo-img-center d-block" alt="이벤트 1">
-                                <img src="./index-img/광복.jpg" class="home-promo-img d-block" alt="이벤트 1">
+                                <img src="./index-img/광복.jpg" class="home-promo-img-r d-block" alt="이벤트 1">
                             </div>
                             <h3 class="text-center-h3">케이팝 데몬 헌터스 감상평 남기기!</h3>
                             <h5 class="text-center-h5">기간 : 2025년 7월 25일(금) ~ 2025년 8월 17일(일)</h5>
-                            <div class="mb-2" style="text-align: center;"><button class="home-promo-btn"><a href="./event.html">자세히 보기</a></button></div>
+                            <div class="mb-2" style="text-align: center;"><button class="home-promo-btn"><a
+                                        href="./event.html">자세히 보기</a></button></div>
                         </div>
                         <div class="carousel-item">
                             <div class="home-promo-img-box">
-                                <img src="./index-img/후기.jpg" class="home-promo-img d-block" alt="이벤트 1">
+                                <img src="./index-img/후기.jpg" class="home-promo-img-l d-block" alt="이벤트 1">
                                 <img src="./index-img/광복.jpg" class="home-promo-img-center d-block" alt="이벤트 1">
-                                <img src="./index-img/광복.jpg" class="home-promo-img d-block" alt="이벤트 1">
+                                <img src="./index-img/광복.jpg" class="home-promo-img-r d-block" alt="이벤트 1">
                             </div>
                             <h3 class="text-center-h3">광복 80주년 기념 메시지 이벤트</h3>
                             <h5 class="text-center-h5">기간 : 2025년 5월 7일(수) ~ 2025년 5월 7일(수)</h5>
-                            <div class="mb-2" style="text-align: center;"><button class="home-promo-btn"><a href="#">자세히 보기</a></button></div>
-                            
+                            <div class="mb-2" style="text-align: center;"><button class="home-promo-btn"><a href="#">자세히
+                                        보기</a></button></div>
+
                         </div>
                         <div class="carousel-item">
                             <div class="home-promo-img-box">
-                                <img src="./index-img/광복.jpg" class="home-promo-img d-block" alt="이벤트 1">
+                                <img src="./index-img/광복.jpg" class="home-promo-img-l d-block" alt="이벤트 1">
                                 <img src="./index-img/광복.jpg" class="home-promo-img-center d-block" alt="이벤트 1">
-                                <img src="./index-img/후기.jpg" class="home-promo-img d-block" alt="이벤트 1">
+                                <img src="./index-img/후기.jpg" class="home-promo-img-r d-block" alt="이벤트 1">
                             </div>
                             <h3 class="text-center-h3">광복 80주년 기념 메시지 이벤트</h3>
                             <h5 class="text-center-h5">기간 : 2025년 5월 7일(수) ~ 2025년 5월 7일(수)</h5>
-                            <div class="mb-2" style="text-align: center;"><button class="home-promo-btn"><a href="#">자세히 보기</a></button></div>
+                            <div class="mb-2" style="text-align: center;"><button class="home-promo-btn"><a href="#">자세히
+                                        보기</a></button></div>
                         </div>
                     </div>
                     <button class="home-carousel-prev carousel-control-prev" type="button"
@@ -154,7 +158,23 @@
 
 
     </section>
-    <section style="height: 100px; background-color: aqua;">히스토리</section>
+
+
+    <section class="home-history-section">
+        <div class="home-history-inner">
+            <h2>음악과 문장을 잇는 공간<br><span class="highlight">K‑Culture Coffee</span></h2>
+            <p class="home-history-subtitle">K‑컬처 감성으로 당신의 하루를 채웁니다.</p>
+            <p class="home-history-subtitle-text">
+                LP의 아날로그 감성과 한국 문학, K‑POP이 어우러진<br>
+                새로운 문화 공간에서 여유와 감성을 경험하세요.
+            </p>
+        </div>
+        <div style="position: relative;" class="home-history-img-box">
+            <img class="home-history-img1" src="./index-img/공간.png" alt="#">
+            <img class="home-history-img2" src="./index-img/공간2.png" alt="#">
+        </div>
+        
+    </section>
 
 
     <!-- ---------------------푸터 영역--------------------- -->
