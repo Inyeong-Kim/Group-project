@@ -20,7 +20,7 @@ ul.kyuyoung-sub-title-left-side li {
 }
 .kyuyoung-img-arrow {
   position: relative;
-  top: 2px;
+  top: 0.15em;
 }
 .kyuyoung-style-none {
   list-style: none;
@@ -111,4 +111,16 @@ tr.kyuyoung-tr:hover {
   padding: 6px 12px;
   font-size: 1em;
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  /* 번호 열 숨기기 */
+  .kyuyoung-table th:nth-child(1),
+  .kyuyoung-table td:nth-child(1) {
+    display: none;
+  }
+  /* 조회수 열 숨기기 */
+  .kyuyoung-table th:nth-child(4),
+  .kyuyoung-table td:nth-child(4) {
+    display: none;
+  }
 }
