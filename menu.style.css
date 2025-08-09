@@ -178,3 +178,9 @@ footer {
     display: block;
   }
 }
+
+@media screen and (max-width:575.98px) {
+  .menu-main-font{
+    max-width: 95px;
+  }
+}
