@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="nav-footer.style.css">
-    <link rel="stylesheet" href="history.style copy.css">
+    <link rel="stylesheet" href="history-test.css">
 </head>
 <body id="history-top">
     <!-- ---------------------네비 영역--------------------- -->
@@ -50,9 +50,21 @@
 
     
     <div class="history-main">
+
+    <div class="history-title">
+        <h1>OUR HISTORY</h1>
+        <p class="history-title-p">
+            커피와 K-문화가 함께하는 공간, <br>
+            그리고 한 잔 속에 담긴 수많은 사람들의 정성과 열정.<br>
+            우리는 커피 한 잔이 주는 위로와 영감을 믿습니다.<br>
+            언제나 좋은 원두와 최적의 로스팅, 세심한 서비스로<br>
+            고객과의 약속을 지켜왔습니다.
+        </p>
+        <div class="history-title-line"></div>
+    </div>
         
     <!-- 카페 외관사진, 카페 컨셉 -->
-    <div class="history-ourStory pt-5 pb-5">
+    <div id="ourStroy"class="history-ourStory pt-5 pb-5">
 
         <div class="container">
             <h2 class="history-ourStory-h2">OUR STORY</h2>
@@ -81,7 +93,7 @@
 
     <!-- 커피 -->
 
-    <div class="history-ourCoffee">
+    <div id="ourCoffee" class="history-ourCoffee">
         <div class="pt-5 pb-5">
             <div class="container">
                 <h2 class="history-ourCoffee-h2">OUR COFFEE</h2>
@@ -110,7 +122,7 @@
 
     <!-- 원두 -->
 
-    <div class="history-ourBeans">
+    <div id="ourBeans" class="history-ourBeans">
         <div class="pt-5 pb-5">
             <div class="container">
                 <h2 class="history-ourCoffee-h2">OUR BEANS</h2>
@@ -118,47 +130,73 @@
 
             <div class="history-content-3">
                 <div class="cafe-img-line">
-                    <img class="cafe-beans-img" src="./images/beans.png"/>
+                    <img class="cafe-beans-img" src="./images/beans2.jpg"/>
                 </div>
 
                 <div class="cafe-content-2">
                     <h4 class="cafe-title-2">“감성의 결을 따라 볶아낸, 우리의 원두”</h4>
+                    <p>
+                    우리의 원두는 기후와 토양, 일조량이 조화를 이루는 최적의 산지에서 재배된 아라비카 원두만을 엄선합니다.
+                    <br>
+                    깊고 풍부한 향과 균형 잡힌 바디감, 섬세한 산미를 지닌 한 잔은 산지와 계절의 이야기를 전합니다.
+                    <br><br>
+                    우리는 산지 농부들과 함께 재배 과정을 연구·개선하며, 각 원두 고유의 풍미를 극대화합니다.
+                    <br>
+                    농부들의 정성과 우리의 로스팅 노하우가 어우러져 완성된 커피를 만나보세요.
+                    <br><br>
+                    또한, 우리의 시그니처 블렌드와 싱글 오리진, 시즌별 스페셜 로스트까지<br>
+                    총 3가지 패키징 버전으로 준비해,<br>
+                    취향과 분위기에 맞게 선택할 수 있는 별도 판매 라인업을 제공합니다. 
+                    </p>
                    
+                    <!-- beans 사진 -->
+                    <div class="container pt-5 pb-5">
+                        <div class="row row-cols-1 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/beans3.png" class="card-img-top" alt="...">
+                                    <div class="card-body card-title-location">
+                                        <h4 class="card-title">서울 블렌드 (Seoul Blend)</h4>
+                                        <p>도심의 감성과 따뜻한 여운을 담아낸 하우스 블렌드.
+                                        미디엄 로스트로 균형 잡힌 산미와 바디감이 특징이며,
+                                        K‑POP 감상과 어울리는 부드러운 향과 깔끔한 마무리를 느낄 수 있습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="./images/beans4.png" class="card-img-top" alt="...">
+                                    <div class="card-body card-title-location">
+                                        <h4 class="card-title">여백의 시간 (Blank Space)</h4>
+                                        <p>한 페이지를 읽을 때처럼 잔잔하고 부드럽게 스며드는 싱글 오리진.
+                                        콜드브루 또는 드립 커피로 즐기면, 은은한 과일향과 차분한 산미가 매력적으로 다가옵니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card hover-text-card">
+                                    <img src="./images/beans5.png" class="card-img-top" alt="...">
+                                    <div class="card-body card-title-location">
+                                        <h4 class="card-title">콘셉트 로스트 (Concept Roast)</h4>
+                                        <p class="default-text">매 시즌, 특정 아티스트의 무드에서 영감을 받은 특별 로스트.
+                                        노래의 온도와 가사에서 느껴지는 감성을 커피향으로 재해석한 아티스트 셀렉션 원두입니다.</p>
+                                        <p class="hover-text">이번 시즌은 케이팝데몬헌터스와 콜라보한 스페셜 에디션과 함께 합니다!
+                                        보라, 하늘빛이 어우러진 한정판 패키징과 시원한 여름을 달래줄 원두를 만나보세요.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- beans 사진 끝나는 부분-->
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div>
-        <div class="cafe-img-3">
-            <div class="img-cover">
-                <div class="img-content container">
-                    <h1>OUR BEANS</h1>
-                </div>
-            </div>
-        </div>
-        <div class="cafe-content container">
-            <h2>“감성의 결을 따라 볶아낸, 우리의 원두”</h2>
-                <!--<h3>“K‑컬처 감성으로 당신의 하루를 채웁니다.”</h3> -->
-            <h4 class="pt-4">
-                1. 서울 블렌드 (Seoul Blend)
-                    도심의 감성과 따뜻한 여운을 담아낸 하우스 블렌드.
-                    중볶음으로 균형 잡힌 산미와 바디감이 특징이며,
-                    K‑POP 감상과 어울리는 부드러운 향과 깔끔한 마무리를 느낄 수 있습니다.
-                </h4> 
-                <h4 class="pt-4">   
-                2. 여백의 시간 (Blank Space)
-                    한 페이지를 읽을 때처럼 잔잔하고 부드럽게 스며드는 싱글 오리진.
-                    콜드브루 또는 드립 커피로 즐기면, 은은한 과일향과 차분한 산미가 매력적으로 다가옵니다.
-                </h4>
-                <h4 class="pt-4">    
-                3. 콘셉트 로스트 (Concept Roast)
-                    매 시즌, 특정 아티스트의 무드에서 영감을 받은 특별 로스트.
-                    노래의 온도와 가사에서 느껴지는 감성을 커피향으로 재해석한 아티스트 셀렉션 원두입니다.
-                </h4>
-        </div>
-    </div>
-
+    
     <!-- 맨 위로 가기 버튼 test-->
     <div class="history-top-btn">
             <button class="top-btn"><a href="#history-top" class="top-btn-a">▲위로가기</a></button>
