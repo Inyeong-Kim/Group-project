@@ -5,6 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  font-family: 'Pretendard','Malgun Gothic', '맑은 고딕', sans-serif;
+}
+
 .history-content-1{
   display: flex;
   justify-content: center;

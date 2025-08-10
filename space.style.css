@@ -1,11 +1,15 @@
 
 /* space css */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Pretendard','Malgun Gothic', '맑은 고딕', sans-serif;
 }
 
 .logo-img{
-   width: 300px;
+  width: 300px;
 }
 
 .space-title{
@@ -13,8 +17,8 @@ html {
 }
 
 .space-text{
-    text-align: center;
-    margin-bottom: 7rem;
+  text-align: center;
+  margin-bottom: 7rem;
 }
 
 .space-img{
