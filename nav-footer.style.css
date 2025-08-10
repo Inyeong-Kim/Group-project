@@ -1,6 +1,15 @@
 body {
   margin: 0;
-  padding-top: 56px;
+  padding-top: 65px;
+  max-width: 1920px;
+}
+.home-nav-container-fluid{
+  padding: 0;
+  margin: 0;
+  max-width: 1920px;
+}
+.home-nav-btn{
+  margin-right: 1vw;
 }
 .navbar {
   font-weight: bolder;
@@ -10,6 +19,7 @@ body {
   background-color: #f2dcdc;
   z-index: 1000;
 }
+
 .navbar button {
   color: #7b2a3b;
   border: 1px solid #7b2a3b;

@@ -149,6 +149,10 @@ html {
     color: #7b2a3b;
 }
 
+/* 위로가기 버튼 끝 */
+
+
+
 .hover-text-card .hover-text {
     display: none;
 }
@@ -205,4 +209,71 @@ html {
     text-align: center
   }
 
+  .history-content-1,
+  .history-content-2,
+  .history-content-3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .history-title-p{
+    font-size: 1rem; 
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+
 }
+
+
+@media (max-width: 30rem) {
+    .history-content-1{
+      flex-direction: column;
+    }
+    .cafe-content{
+      align-items: center;  
+      justify-content: center;
+      align-content: center;
+      text-align: center
+    }
+
+    .history-title-p{
+      font-size: 0.9rem; 
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+    }
+
+    .history-content-1,
+    .history-content-2,
+    .history-content-3{
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .cafe-title, .cafe-title-2{
+      font-size: 1rem;     
+      line-height: 1.4; 
+      margin-bottom: 0.75rem;
+    }
+    .cafe-content h5{
+      font-size: 0.9rem;     
+      line-height: 1.4; 
+      margin-bottom: 0.75rem;
+    }
+    .cafe-content p, .cafe-content-2 p{
+      font-size: 0.8rem;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+    .card-title{
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+    .card-body p{
+      font-size: 0.8rem;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
+    }
+
+}
+
