@@ -188,8 +188,11 @@ body{
   align-content: center;
   justify-content: center;
   font-weight: bolder;
-  
 }
+.history-title h1{
+  font-weight: bolder;
+}
+
 .history-title-line{
   width: 50%;
   padding-bottom: 2rem;
