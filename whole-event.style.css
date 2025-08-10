@@ -43,7 +43,7 @@ ul.sub-title-left-side li {
 /* --- 이벤트 섹션 전체 스타일 --- */
 .event-section {
     padding: 3.125rem 1.25rem;
-    max-width: 75rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 .event-section h2 {
@@ -109,20 +109,23 @@ ul.sub-title-left-side li {
     color: #666;
 }
 /* --- 반응형 디자인 (미디어 쿼리) --- */
-@media (max-width: 64rem) {
+@media (max-width: 80rem) { /* 1280px 이하에서 3열로 변경 */
+    .event-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 64rem) { /* 1024px 이하에서 2열로 변경 */
     .event-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media (max-width: 37.5rem) {
+@media (max-width: 37.5rem) { /* 600px 이하에서 1열로 변경 */
     .event-section {
         padding: 2.5rem 0.9375rem;
     }
-
     .event-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-
     .event-section h2 {
         font-size: 1.25rem;
     }
