@@ -48,7 +48,7 @@ a {
 .home-carousel-img {
   border: 0.3vw solid #7b2a3b;
   aspect-ratio: 16 / 7;
-  width: 80%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -104,20 +104,58 @@ a {
 }
 
 /* 커피 이야기? */
-.home-coffee-section{
-  height: 500px;
-  position: relative;
-  z-index: 0;
-}
-.home-coffee-section::before{
-  content: "";
-  position: absolute;
+.home-coffee-section {
   background: url(./images/beans.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%; height: 100%;
-  top: 0; left: 0;
-  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+}
+.home-coffee-text-button{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: start;
+}
+
+.home-coffee-text-box {
+  max-width: 600px;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.home-coffee-title {
+  font-size: clamp(18px, 2.5vw, 50px);
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #f2dcdc;
+}
+
+.home-coffee-desc {
+  font-size: clamp(8px, 1.8vw, 50px);
+  line-height: 1.6;
+  font-weight: bolder;
+  color: #f2dcdc;
+  margin-bottom: 1vh;
+}
+
+.home-coffee-img-box {
+  margin: 20px;
+  max-height: 350px;
+}
+
+.home-coffee-img {
+  max-width: clamp(150px, 15vw, 400px);
+  height: auto;
+}
+.home-coffee-button{
+  font-size: clamp(6px, 1.5vw, 50px);
+  margin: 0 20px;
+  padding: 0.1rem 0.4rem;
 }
 
 /* 공지사항 / 이벤트 */
@@ -248,15 +286,14 @@ a {
   padding: 0 0 -100px 0;
 }
 
-.home-menu-section>p{
+.home-menu-section > p {
   color: #f2dcdc;
   font-size: clamp(12px, 5vw, 40px);
   font-weight: bolder;
   text-align: center;
   padding-top: clamp(25px, 5vw, 150px);
-  
 }
-.home-menu-section>h4{
+.home-menu-section > h4 {
   color: #f2dcdc;
   font-size: clamp(12px, 5vw, 40px);
   font-weight: bolder;
@@ -274,7 +311,7 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.home-menu-card h2{
+.home-menu-card h2 {
   text-align: center;
   font-size: clamp(5.2px, 1.5vw, 22px);
   font-weight: bolder;
@@ -286,7 +323,7 @@ a {
   width: 90%;
   max-height: 400px;
 }
-.home-menu-card2{
+.home-menu-card2 {
   padding-bottom: 10vw;
 }
 
@@ -463,6 +500,56 @@ a {
     max-height: 100%;
     z-index: 0;
   }
+
+
+  .home-coffee-section {
+  background: url(./images/beans.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #fdfdfd;
+}
+.home-coffee-text-button{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+
+.home-coffee-text-box {
+  text-align: center;
+}
+
+.home-coffee-title {
+  font-size: clamp(20px, 3vw, 50px);
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #f2dcdc;
+}
+
+.home-coffee-desc {
+  font-size: clamp(8px, 2vw, 50px);
+  line-height: 1.6;
+  font-weight: bolder;
+  color: #f2dcdc;
+  margin-bottom: 1vh;
+}
+
+.home-coffee-img {
+  max-width: clamp(150px, 10vw, 400px);
+  height: auto;
+}
+.home-coffee-button{
+  font-size: clamp(6px, 1.5vw, 50px);
+  margin: 0 20px;
+  padding: 0.1rem 0.4rem;
+}
+
 }
 
 @media screen and (max-width: 575.98px) {
